@@ -53,7 +53,6 @@ textarea, input[type=text] { width:100% }
 
 
 	<?php
-		error_reporting(E_ALL);
 		$headernavi = get_posts('numberposts=2&order=DESC');
 		$headernavititles = array('Vorherige Revision:', 'Neueste Revision:');
 		foreach($headernavi as $post){
