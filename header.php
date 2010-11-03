@@ -29,7 +29,7 @@ h1, h2, h3, h4, h5, h6 { text-align: left }
 h1, h2, h3 { color: #8f098f }
 	h1 a:link, h1 a:visited { color: #8f098f }
 h1 { font: 170% sans-serif }
-h1 a { text-decoration: none }
+h1 a:link { text-decoration: none }
 h2 { font: 140% sans-serif }
 h3 { font: 120% sans-serif }
 h4 { font: bold 100% sans-serif }
