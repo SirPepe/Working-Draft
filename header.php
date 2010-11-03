@@ -55,7 +55,7 @@ textarea, input[type=text] { width:100% }
 	<?php
 		error_reporting(E_ALL);
 		$headernavi = get_posts('numberposts=2&order=DESC');
-		$headernavititles = array('Vorherige Revision', 'Neueste Revision');
+		$headernavititles = array('Vorherige Revision:', 'Neueste Revision:');
 		foreach($headernavi as $post){
 			setup_postdata($post);
 			echo '<dt>' . array_pop($headernavititles) . '</dt>';
@@ -63,18 +63,19 @@ textarea, input[type=text] { width:100% }
 		}
 	?>
 	<dt>Abonnieren:</dt>
-	<dd><a href="<?php bloginfo('rss_url'); ?>">Newsfeed</a></dd>
-	<dd><a href="#">Twitter</a></dd>
+	<dd><a href="<?php bloginfo('rss_url'); ?>">RSS-Feed</a></dd>
+	<dd><a href="#itunes">iTunes-Feed</a></dd>
+	<dd><a href="http://twitter.com/workingdraft">Twitter</a></dd>
 	<dt>Moderatoren:</dt>
-	<dd>Markus Schlegel (<a href="http://markus-schlegel.com">markus-schlegel.com</a>)</dd>
+	<dd>Peter Kröner (<a href="http://twitter.com/sir_pepe">@sir_pepe</a>)</dd>
+	<dd>Markus Schlegel (<a href="http://twitter.com/markus_schlegel">@markus_schlegel</a>)</dd>
 	<dd>Christian Schaefer (<a href="http://twitter.com/derSchepp">@derSchepp</a>)</dd>
-	<dd>Peter Kröner (<a href="http://peterkroener.de">peterkroener.de</a>)</dd>
 	<dd><a href="#guests">Weitere</a></dd>
 </dl>
 
 
 <p>
-	<small>Lizenzbestimmungen, Creative Commons oder Whatever</small>
+	<small>Alle Inhalte stehen sofern nicht anders vermerkt unter einer CC-BY-SA-Lizenz. <a href="http://creativecommons.org/licenses/by-sa/3.0/de/">Namensnennung-Weitergabe unter gleichen Bedingungen 3.0 Deutschland</a></small>
 </p>
 
 
