@@ -29,6 +29,7 @@ h1, h2, h3, h4, h5, h6 { text-align: left }
 h1, h2, h3 { color: #8f098f }
 	h1 a:link, h1 a:visited { color: #8f098f }
 h1 { font: 170% sans-serif }
+h1 a { text-decoration: none }
 h2 { font: 140% sans-serif }
 h3 { font: 120% sans-serif }
 h4 { font: bold 100% sans-serif }
@@ -69,7 +70,6 @@ textarea, input[type=text] { width:100% }
 	<dd>Peter Kröner (<a href="http://twitter.com/sir_pepe">@sir_pepe</a>)</dd>
 	<dd>Markus Schlegel (<a href="http://twitter.com/markus_schlegel">@markus_schlegel</a>)</dd>
 	<dd>Christian Schaefer (<a href="http://twitter.com/derSchepp">@derSchepp</a>)</dd>
-	<dd><a href="#guests">Weitere</a></dd>
 </dl>
 
 
