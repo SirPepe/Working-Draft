@@ -74,7 +74,10 @@ textarea, input[type=text] { width:100% }
 
 
 <p>
-	<small>Alle Inhalte stehen sofern nicht anders vermerkt unter einer CC-BY-SA-Lizenz. <a href="http://creativecommons.org/licenses/by-sa/3.0/de/">Namensnennung-Weitergabe unter gleichen Bedingungen 3.0 Deutschland</a></small>
+	<small>
+		Alle Inhalte stehen, sofern nicht anders vermerkt, unter einer <a title="Namensnennung-Weitergabe unter gleichen Bedingungen 3.0 Deutschland" href="http://creativecommons.org/licenses/by-sa/3.0/de/">CC-BY-SA-Lizenz</a>.
+		Musik: <a href="http://www.jamendo.com/en/album/6746">Kursed - Abstract</a>
+	</small>
 </p>
 
 
