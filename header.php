@@ -8,10 +8,11 @@
 		rewind_posts();
 	}
 	else{
-		$description = 'Default description';
+		$description = 'Working Draft ist ein wöchentlicher News-Podcast für Webdesigner und Webentwickler';
 	}
 ?>
 <meta name="description" content="<?php echo $description; ?>">
+<link rel="shortcut icon" href="<?php bloginfo('url'); ?>/favicon.png" type="image/png">
 <link rel="alternate" type="application/rss+xml" title="<?php bloginfo('name'); ?>" href="<?php bloginfo('rss2_url'); ?>">
 <style>
 body {
@@ -43,6 +44,9 @@ fieldset { border:none; margin:0; padding:0 }
 textarea, input[type=text] { width:100% }
 </style>
 <?php wp_head(); ?>
+
+
+<body>
 
 
 <hgroup>
