@@ -21,6 +21,7 @@ body {
 	color: black;
 	background: white url(<?php bloginfo('template_url'); ?>/logo-working-draft.png) top left no-repeat fixed
 }
+#icon { position:absolute; top:16px; right:32px; border:none }
 a:link { color: #850051; background: transparent; text-decoration:underline }
 a:visited { color: #a35e88; background: transparent; text-decoration:underline }
 a:hover { text-decoration:none }
@@ -45,9 +46,12 @@ textarea, input[type=text] { width:100% }
 
 
 <hgroup>
-<h1><a href="<?php bloginfo(url); ?>/"><?php bloginfo('name') ?></a></h1>
+<h1><a href="<?php bloginfo(url); ?>"><?php bloginfo('name') ?></a></h1>
 <h2><?php bloginfo('description') ?></h2>
 </hgroup>
+
+
+<a href="<?php bloginfo(url); ?>"><img id="icon" src="<?php bloginfo(template_url); ?>/icon.png" alt=""></a>
 
 
 <dl>
