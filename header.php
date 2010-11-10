@@ -8,10 +8,11 @@
 		rewind_posts();
 	}
 	else{
-		$description = 'Default description';
+		$description = 'Working Draft ist ein wöchentlicher News-Podcast für Webdesigner und Webentwickler';
 	}
 ?>
 <meta name="description" content="<?php echo $description; ?>">
+<link rel="shortcut icon" href="<?php bloginfo('url'); ?>/favicon.png" type="image/png">
 <link rel="alternate" type="application/rss+xml" title="<?php bloginfo('name'); ?>" href="<?php bloginfo('rss2_url'); ?>">
 <style>
 body {
@@ -21,6 +22,7 @@ body {
 	color: black;
 	background: white url(<?php bloginfo('template_url'); ?>/logo-working-draft.png) top left no-repeat fixed
 }
+#icon { position:absolute; top:16px; right:32px; border:none }
 a:link { color: #850051; background: transparent; text-decoration:underline }
 a:visited { color: #a35e88; background: transparent; text-decoration:underline }
 a:hover { text-decoration:none }
@@ -44,10 +46,16 @@ textarea, input[type=text] { width:100% }
 <?php wp_head(); ?>
 
 
+<body>
+
+
 <hgroup>
-<h1><a href="<?php bloginfo(url); ?>/"><?php bloginfo('name') ?></a></h1>
+<h1><a href="<?php bloginfo(url); ?>"><?php bloginfo('name') ?></a></h1>
 <h2><?php bloginfo('description') ?></h2>
 </hgroup>
+
+
+<a href="<?php bloginfo(url); ?>"><img id="icon" src="<?php bloginfo(template_url); ?>/icon.png" alt=""></a>
 
 
 <dl>
@@ -74,7 +82,10 @@ textarea, input[type=text] { width:100% }
 
 
 <p>
-	<small>Alle Inhalte stehen sofern nicht anders vermerkt unter einer CC-BY-SA-Lizenz. <a href="http://creativecommons.org/licenses/by-sa/3.0/de/">Namensnennung-Weitergabe unter gleichen Bedingungen 3.0 Deutschland</a></small>
+	<small>
+		Alle Inhalte stehen, sofern nicht anders vermerkt, unter einer <a title="Namensnennung-Weitergabe unter gleichen Bedingungen 3.0 Deutschland" href="http://creativecommons.org/licenses/by-sa/3.0/de/">CC-BY-SA-Lizenz</a>.
+		Musik: <a href="http://www.jamendo.com/en/album/6746">Kursed - Abstract</a>
+	</small>
 </p>
 
 
