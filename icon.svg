@@ -7,10 +7,34 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    version="1.2"
    width="512"
    height="512"
-   id="svg2">
+   id="svg2"
+   inkscape:version="0.48.0 r9654"
+   sodipodi:docname="icon.svg">
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1280"
+     inkscape:window-height="752"
+     id="namedview11"
+     showgrid="false"
+     inkscape:zoom="0.60455268"
+     inkscape:cx="479.48501"
+     inkscape:cy="127.92864"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg2" />
   <defs
      id="defs4" />
   <metadata
@@ -21,30 +45,26 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
-  <g
-     transform="translate(0,-540.36218)"
-     id="layer1">
-    <path
-       d="m 512,256 a 256,256 0 1 1 -512,0 256,256 0 1 1 512,0 z"
-       transform="matrix(0.90625,0,0,0.90625,24,564.36218)"
-       id="path2998"
-       style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#8f098f;stroke-width:52.96551895;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
-    <flowRoot
-       transform="translate(199.55469,486.14054)"
-       id="flowRoot3768"
-       xml:space="preserve"
-       style="font-size:480px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Futura;-inkscape-font-specification:Futura"><flowRegion
-         id="flowRegion3770"><rect
-           width="779.57141"
-           height="541.28571"
-           x="-16.415178"
-           y="81.752251"
-           id="rect3772"
-           style="font-size:480px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Futura;-inkscape-font-specification:Futura" /></flowRegion><flowPara
-         id="flowPara3774"
-         style="font-size:400px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#8f098f;fill-opacity:1;font-family:Futura;-inkscape-font-specification:Futura">!</flowPara></flowRoot>  </g>
-</svg>
+  <path
+     inkscape:connector-curvature="0"
+     style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#8f098f;stroke-width:48;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+     id="path2998"
+     d="m 488,256 a 232,232 0 0 1 -464,0 232,232 0 1 1 464,0 z" />
+  <flowRoot
+     style="font-size:400px;font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Futura;-inkscape-font-specification:Futura Medium"
+     xml:space="preserve"
+     id="flowRoot3768"
+     transform="translate(206,-68.695772)"><flowRegion
+       id="flowRegion3770"><rect
+         style="font-size:400px;font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-family:Futura;-inkscape-font-specification:Futura Medium"
+         id="rect3772"
+         y="81.752251"
+         x="-16.415178"
+         height="541.28571"
+         width="779.57141" /></flowRegion><flowPara
+       style="font-size:400px;font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;fill:#8f098f;fill-opacity:1;font-family:Futura;-inkscape-font-specification:Futura Medium"
+       id="flowPara3774">!</flowPara></flowRoot></svg>
