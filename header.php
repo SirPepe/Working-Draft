@@ -42,6 +42,7 @@ dt { font-weight: bold; margin-top:0.5em }
 .comment { margin-left:2em }
 fieldset { border:none; margin:0; padding:0 }
 textarea, input[type=text] { width:100% }
+#schnorren { background:#eedaee; border: 6px solid #8f098f; display:inline; display:inline-block; padding: 0 16px }
 </style>
 <?php wp_head(); ?>
 
@@ -81,20 +82,29 @@ textarea, input[type=text] { width:100% }
 </dl>
 
 
+<div id="schnorren">
+	<h3>Spenden für Soundqualität!</h3>
+	<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+		<p>
+			Alle Spenden fließen zu 100% in die Anschaffung von besserer Aufnahme-Hardware.
+		</p>
+		<p>
+			<a class="FlattrButton" style="display:none;" rev="flattr;button:compact;" href="http://workingdraft.de"></a>
+			<input type="hidden" name="cmd" value="_s-xclick">
+			<input type="hidden" name="hosted_button_id" value="2JGKMAUWSGVSE">
+			<input type="image" src="https://www.paypal.com/de_DE/DE/i/btn/btn_donate_SM.gif" border="0" name="submit" alt="Jetzt einfach, schnell und sicher online bezahlen – mit PayPal.">
+			<img alt="" border="0" src="https://www.paypal.com/de_DE/i/scr/pixel.gif" width="1" height="1">
+		</p>
+	</form>
+</div>
+
+
 <p>
 	<small>
 		Alle Inhalte stehen, sofern nicht anders vermerkt, unter einer <a title="Namensnennung-Weitergabe unter gleichen Bedingungen 3.0 Deutschland" href="http://creativecommons.org/licenses/by-sa/3.0/de/">CC-BY-SA-Lizenz</a>.
-		Musik: <a href="http://www.jamendo.com/en/album/6746">Kursed - Abstract</a> Direkt-Flattr zum Wohle der Audioqualität: <a class="FlattrButton" style="display:none;" rev="flattr;button:compact;"
-href="http://workingdraft.de"></a>
+		Musik: <a href="http://www.jamendo.com/en/album/6746">Kursed - Abstract</a>
 	</small>
 </p>
-
-<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
-<input type="hidden" name="cmd" value="_s-xclick">
-<input type="hidden" name="hosted_button_id" value="2JGKMAUWSGVSE">
-<input type="image" src="https://www.paypal.com/de_DE/DE/i/btn/btn_donate_SM.gif" border="0" name="submit" alt="Jetzt einfach, schnell und sicher online bezahlen – mit PayPal.">
-<img alt="" border="0" src="https://www.paypal.com/de_DE/i/scr/pixel.gif" width="1" height="1">
-</form>
 
 
 <hr>
