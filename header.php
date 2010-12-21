@@ -75,6 +75,7 @@ textarea, input[type=text] { width:100% }
 	<dd><a href="<?php bloginfo('rss_url'); ?>">RSS-Feed</a></dd>
 	<dd><a href="http://itunes.apple.com/de/podcast/working-draft/id402204581">iTunes-Feed</a></dd>
 	<dd><a href="http://twitter.com/workingdraft">Twitter</a></dd>
+	<dd><a href="/comments/feed/">Kommentarfeed</a></dd>
 	<dt>Moderatoren:</dt>
 	<dd>Peter Kröner (<a href="http://twitter.com/sir_pepe">@sir_pepe</a>)</dd>
 	<dd>Markus Schlegel (<a href="http://twitter.com/markus_schlegel">@markus_schlegel</a>)</dd>

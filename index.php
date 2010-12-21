@@ -6,6 +6,9 @@
 
 <div class="postcontainer" id="post-<?php the_ID(); ?>">
 	<h2><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title(); ?>"><?php the_title(); ?></a> (<?php the_time('j. F Y'); ?>)</h2>
+	<p class="small">
+		<?php comments_popup_link('Keine Kommentare', '1 Kommentar', '% Kommentare'); ?>
+	</p>
 	<div class="postcontent">
 		<?php the_content(); ?>
 	</div>
