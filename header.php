@@ -71,6 +71,8 @@ textarea, input[type=text] { width:100% }
 			echo '<dd><a href="' . get_permalink($post->ID) . '">' . get_the_title() . ' (' . get_the_time('j. F Y') . ')</a></dd>';
 		}
 	?>
+	<dt>Versionsgeschichte:</dt>
+	<dd><a href="/archiv/"><?php echo wp_count_posts('post')->publish; ?> Revisionen im Archiv</a></dd>
 	<dt>Abonnieren:</dt>
 	<dd><a href="<?php bloginfo('rss_url'); ?>">RSS-Feed</a></dd>
 	<dd><a href="http://itunes.apple.com/de/podcast/working-draft/id402204581">iTunes-Feed</a></dd>
