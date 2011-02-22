@@ -32,17 +32,22 @@ h1, h2, h3 { color: #8f098f }
 	h1 a:link, h1 a:visited { color: #8f098f }
 h1 { font: 170% sans-serif }
 h1 a:link { text-decoration: none }
-h2 { font: 140% sans-serif }
+h2 { font: 140% sans-serif; margin-top:2em; }
 h3 { font: 120% sans-serif }
 h4 { font: bold 100% sans-serif }
 h5 { font: italic 100% sans-serif }
 h6 { font: small-caps 100% sans-serif }
 dt { font-weight: bold; margin-top:0.5em }
+hr, .clear { clear:both; display:block; }
 .meta { font-size:0.9em }
 .comment { margin-left:2em }
+.commenthead { font-weight:bold; }
 fieldset { border:none; margin:0; padding:0 }
 textarea, input[type=text] { width:100% }
 #schnorren { background:#eedaee; border: 6px solid #8f098f; display:inline; display:inline-block; padding: 0 16px }
+.nav { margin:2em 0; font-weight:bold; }
+.nav-next { float:left; }
+.nav-prev { float:right; }
 </style>
 <?php wp_head(); ?>
 

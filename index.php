@@ -6,7 +6,7 @@
 
 <div class="postcontainer" id="post-<?php the_ID(); ?>">
 	<h2><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title(); ?>"><?php the_title(); ?></a> (<?php the_time('j. F Y'); ?>)</h2>
-	<p class="small">
+	<p class="commenthead">
 		<?php comments_popup_link('Keine Kommentare', '1 Kommentar', '% Kommentare'); ?>
 	</p>
 	<div class="postcontent">
@@ -30,6 +30,16 @@
 </div>
 
 
+<?php endif; ?>
+
+
+<?php if($wp_query->max_num_pages > 1 ): ?>
+<hr>
+<p class="nav">
+	<span class="nav-prev"><?php next_posts_link('Ältere Revisionen  &rarr;'); ?></span>
+	<span class="nav-next"><?php previous_posts_link('&larr; Neuere Revisionen'); ?></span>
+	<span class="clear"></span>
+</p>
 <?php endif; ?>
 
 
