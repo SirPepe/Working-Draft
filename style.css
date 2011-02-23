@@ -1,8 +1,136 @@
 /*
  * Theme Name: Working Draft
  * Theme URI: http://working-draft.de
- * Description: Dreister Ripoff
+ * Description: Dreister Ripoff mit wenigen Verschönerungen
  * Version: 1.0
  * Author: Peter Kröner
  * Author URI: http://www.peterkroener.de
  */
+
+
+/* Basics & Layout */
+body {
+	font-family: Verdana, Arial, sans-serif;
+	line-height: 1.5;
+	color: black;
+	background: white url(logo-working-draft.png) top left no-repeat fixed;
+	text-align:left;
+	margin: 0;
+	padding: 2em 6em 2em 8em;
+}
+#schnorren.left {
+	float:left;
+}
+.clear {
+	display:block;
+	clear:both;
+}
+
+
+/* Links */
+a {
+	text-decoration:none;
+}
+a:link {
+	color: #850051;
+	border-bottom:1px solid #850051;
+}
+a:visited {
+	color: #a35e88;
+	border-bottom:1px dotted #a35e88;
+}
+a:hover {
+	text-decoration:none;
+	border-bottom:1px solid transparent;
+}
+a:active {
+	color: #C00;
+	border-bottom:1px solid transparent;
+}
+h1 a, h2 a, h3 a {
+	font-weight:bold;
+	border-width:2px !important;
+}
+
+
+/* Headlines */
+h1, h2 {
+	color: #8f098f;
+	font-weight:normal;
+}
+h1 {
+	font-size:180%;
+}
+h2 {
+	font-size:140%;
+}
+h3 {
+	font-size:120%;
+	font-weight:bold;
+}
+h4 {
+	font-size:110%;
+	font-weight:bold;
+}
+
+
+/* Sonder-Elements */
+hgroup h1 a:link, hgroup h1 a:visited {
+	color: #8f098f;
+}
+hgroup h2  {
+	margin-top:0;
+}
+#icon {
+	position:absolute;
+	top:2em;
+	right:6em;
+	border:none;
+}
+#navi {
+	float:left;
+}
+#schnorren {
+	background:#eedaee;
+	border: 6px solid #8f098f;
+	display:inline;
+	display:inline-block;
+	float:right;
+	margin:1em 0;
+	padding: 0 16px;
+}
+.postcontainer {
+	line-height: 1.65;
+	border-top:1px solid #999;
+	margin:2em 0;
+	padding:2em 0;
+}
+.nav {
+	border-top:1px solid #999;
+	margin:2em 0 0 0;
+	padding:2em 0 0 0;
+}
+#footer {
+	border-top:1px solid #999;
+	padding:2em 0 0 0;
+}
+
+
+/* Typo */
+textarea {
+	height:20em;
+}
+dt {
+	font-weight: bold;
+	margin-top:0.5em
+}
+
+
+.comment { margin-left:2em }
+.commenthead { font-weight:bold; }
+fieldset { border:none; margin:0; padding:0 }
+textarea, input[type=text] { width:100% }
+.nav { margin:2em 0; font-weight:bold; }
+.nav-next { float:left; }
+.nav-prev { float:right; }
+

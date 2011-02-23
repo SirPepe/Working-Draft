@@ -3,24 +3,12 @@
 
 
 
-<div id="kommentare">
+<div id="comments">
 <h3>Kommentare</h3>
 
 
 <?php if($comments): ?>
-	<?php if(get_comment_pages_count() > 1 && get_option('page_comments')): ?>
-		<div class="navigation">
-			<div class="nav-next"><?php next_comments_link('<span class="meta-nav">&rarr;</span> Neuere Kommentare'); ?></div>
-			<div class="nav-previous"><?php previous_comments_link('Ältere Kommentare <span class="meta-nav">&larr;</span>'); ?></div>
-		</div>
-	<?php endif; ?>
 	<?php wp_list_comments(array('callback' => 'theme_comment')); ?>
-	<?php if(get_comment_pages_count() > 1 && get_option('page_comments')): ?>
-		<div class="navigation">
-			<div class="nav-next"><?php next_comments_link('<span class="meta-nav">&rarr;</span> Neuere Kommentare'); ?></div>
-			<div class="nav-previous"><?php previous_comments_link('Ältere Kommentare <span class="meta-nav">&larr;</span>'); ?></div>
-		</div>
-	<?php endif; ?>
 <?php else : ?>
 	<p>Noch keine Kommentare oder Backlinks.</p>
 <?php endif; ?>
