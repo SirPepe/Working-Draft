@@ -144,11 +144,32 @@ dt {
 	float:right
 }
 
-.comment { margin-left:2em }
-.commenthead { font-weight:bold; }
-fieldset { border:none; margin:0; padding:0 }
-textarea, input[type=text] { width:100% }
-.nav { margin:2em 0; font-weight:bold; }
-.nav-next { float:left; }
-.nav-prev { float:right; }
 
+/* Kommentare */
+.comment {
+	margin-left:2em;
+}
+.commenthead {
+	font-weight:bold;
+}
+fieldset {
+	border:none;
+	margin:0;
+	padding:0;
+}
+textarea, input[type=text] {
+	width:100%;
+}
+
+
+/* Navigation */
+.nav {
+	margin:2em 0;
+	font-weight:bold;
+}
+.nav-next {
+	float:left;
+}
+.nav-prev {
+	float:right;
+}
