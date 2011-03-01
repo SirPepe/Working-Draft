@@ -25,6 +25,16 @@ body {
 	display:block;
 	clear:both;
 }
+.clearfix:after {
+	display:block;
+	visibility:hidden;
+	display:block;
+	font-size:0;
+	content:'.';
+	clear:both;
+	height:0;
+	zoom: 1;
+}
 
 
 /* Links */
@@ -125,6 +135,14 @@ dt {
 	margin-top:0.5em
 }
 
+
+/* Dynamischer Content am Post-Ende */
+.podPress_content{
+	float:left;
+}
+.wp-flattr-button {
+	float:right
+}
 
 .comment { margin-left:2em }
 .commenthead { font-weight:bold; }

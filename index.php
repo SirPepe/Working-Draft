@@ -9,7 +9,7 @@
 	<p class="commenthead">
 		<?php the_time('j. F Y'); ?> | <?php comments_popup_link('Keine Kommentare', '1 Kommentar', '% Kommentare'); ?>
 	</p>
-	<div class="postcontent">
+	<div class="postcontent clearfix">
 		<?php the_content(); ?>
 	</div>
 	<?php comments_template(); ?>
