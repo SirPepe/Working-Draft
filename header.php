@@ -1,6 +1,3 @@
-<!doctype html>
-<meta charset="<?php bloginfo( 'charset' ); ?>">
-<title><?php wp_title(' | ', true, 'right'); ?> <?php bloginfo('name'); ?></title>
 <?php
 	if(is_single() OR is_page()){
 		the_post();
@@ -11,62 +8,31 @@
 		$description = 'Working Draft ist ein wöchentlicher News-Podcast für Webdesigner und Webentwickler';
 	}
 ?>
-<meta name="description" content="<?php echo $description; ?>">
-<link rel="shortcut icon" href="<?php bloginfo('url'); ?>/favicon.png" type="image/png">
-<link rel="alternate" type="application/rss+xml" title="<?php bloginfo('name'); ?>" href="<?php bloginfo('rss2_url'); ?>">
-<style>
-body {
-	font-family: sans-serif;
-	margin: 0;
-	padding: 2em 1em 2em 70px;
-	color: black;
-	background: white url(<?php bloginfo('template_url'); ?>/logo-working-draft.png) top left no-repeat fixed
-}
-#icon { position:absolute; top:16px; right:32px; border:none }
-a:link { color: #850051; background: transparent; text-decoration:underline }
-a:visited { color: #a35e88; background: transparent; text-decoration:underline }
-a:hover { text-decoration:none }
-a:active { color: #C00; background: transparent }
-h1, h2, h3, h4, h5, h6 { text-align: left }
-h1, h2, h3 { color: #8f098f }
-	h1 a:link, h1 a:visited { color: #8f098f }
-h1 { font: 170% sans-serif }
-h1 a:link { text-decoration: none }
-h2 { font: 140% sans-serif; margin-top:2em; }
-h3 { font: 120% sans-serif }
-h4 { font: bold 100% sans-serif }
-h5 { font: italic 100% sans-serif }
-h6 { font: small-caps 100% sans-serif }
-dt { font-weight: bold; margin-top:0.5em }
-hr, .clear { clear:both; display:block; }
-.meta { font-size:0.9em }
-.comment { margin-left:2em }
-.commenthead { font-weight:bold; }
-fieldset { border:none; margin:0; padding:0 }
-textarea, input[type=text] { width:100% }
-#schnorren { background:#eedaee; border: 6px solid #8f098f; display:inline; display:inline-block; padding: 0 16px }
-.nav { margin:2em 0; font-weight:bold; }
-.nav-next { float:left; }
-.nav-prev { float:right; }
-</style>
-<?php wp_head(); ?>
 
+<!doctype html>
+<head>
+	<meta charset="<?php bloginfo( 'charset' ); ?>">
+	<title><?php wp_title(' | ', true, 'right'); ?> <?php bloginfo('name'); ?></title>
+	<meta name="description" content="<?php echo $description; ?>">
+	<link rel="shortcut icon" href="<?php bloginfo('url'); ?>/favicon.png" type="image/png">
+	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/style.css">
+	<link rel="alternate" type="application/rss+xml" title="<?php bloginfo('name'); ?>" href="<?php bloginfo('rss2_url'); ?>">
+	<?php wp_head(); ?>
+</head>
 
 <body>
 
 
 <hgroup>
-<h1><a href="<?php bloginfo(url); ?>"><?php bloginfo('name') ?></a></h1>
-<h2><?php bloginfo('description') ?></h2>
+	<h1><a href="<?php bloginfo(url); ?>"><?php bloginfo('name') ?></a></h1>
+	<h2><?php bloginfo('description') ?></h2>
 </hgroup>
 
 
 <a href="<?php bloginfo(url); ?>"><img id="icon" src="<?php bloginfo(template_url); ?>/icon.png" alt=""></a>
 
 
-<dl>
-
-
+<dl id="navi">
 	<?php
 		$headernavi = get_posts('numberposts=2&order=DESC');
 		$headernavititles = array('Vorherige Revision:', 'Neueste Revision:');
@@ -91,7 +57,7 @@ textarea, input[type=text] { width:100% }
 
 
 <div id="schnorren">
-	<h3>Spenden für Soundqualität!</h3>
+	<h2>Spenden für Soundqualität!</h2>
 	<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
 		<p>
 			Alle Spenden fließen zu 100% in die Anschaffung von besserer Aufnahme-Hardware.
@@ -107,12 +73,6 @@ textarea, input[type=text] { width:100% }
 </div>
 
 
-<p>
-	<small>
-		Alle Inhalte stehen, sofern nicht anders vermerkt, unter einer <a title="Namensnennung-Weitergabe unter gleichen Bedingungen 3.0 Deutschland" href="http://creativecommons.org/licenses/by-sa/3.0/de/">CC-BY-SA-Lizenz</a>.
-		Musik: <a href="http://www.jamendo.com/en/album/6746">Kursed - Abstract</a>
-	</small>
-</p>
+<div class="clear"></div>
 
 
-<hr>
