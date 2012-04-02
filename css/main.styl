@@ -1,0 +1,96 @@
+@import "nib/clearfix"
+@import "nib/gradients"
+@import "nib/vendor"
+
+
+violet = #8f098f
+white  = #FFF
+gray   = #E0E0E0
+text   = #000
+sidebar_width   = 160px
+sidebar_padding = 32px
+
+
+// General Typography
+html
+	font-family sans-serif
+	line-height 1.65
+a, body > header hgroup h1 a
+	font-weight bold
+	text-decoration none
+	&:link, &:visited
+		color violet
+		border-bottom 0.1em solid currentcolor
+	&:visited
+		opacity 0.8
+	&:hover
+		color text
+		border-bottom-color transparent
+	&:active
+		color red
+		border-bottom-color transparent
+	&:focus
+		color white
+		background violet
+		border-bottom-color transparent
+h1, h2, h3
+	font-family: Enriqueta, sans-serif
+	font-weight: 700
+h2
+	font-size: 1.7em
+h3
+	font-size: 1.4em
+dt
+	font-weight bold
+dd
+	margin-bottom 0.5em
+
+
+// Main layout
+*
+	box-sizing border-box
+html
+	background linear-gradient(left, violet, violet 50%, gray 50%, gray)
+body
+	background white
+	position relative
+	max-width 960px - sidebar_width - sidebar_padding
+	left sidebar_width + sidebar_padding
+	margin 0 auto
+	padding 16px 48px
+.postcontainer:first-of-type
+	margin-top 10em
+
+
+// Left side / header
+body > header
+	color white
+	position absolute
+	width sidebar_width
+	left (sidebar_width + sidebar_padding) * -1
+	hgroup
+		background  #EEE //rgba(violet, 0.2)
+		color text
+		position absolute
+		top -16px
+		left sidebar_width + sidebar_padding
+		width 960px - (sidebar_width + sidebar_padding)
+		h1, h2
+			padding-left 48px
+		h1
+			font-size: 1.7em
+		h2
+			font-size 1.2em
+	a
+		font-weight normal
+		&:link, &:visited, &:hover
+			color white
+		&:active, &:focus
+			color violet !important
+			background white
+	dl
+		font-size 0.85em
+	dt
+		margin-top 1.75em
+	dd
+		margin-left 0
